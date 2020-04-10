@@ -69,7 +69,9 @@
           <el-input v-model="editForm.goods_weight"></el-input>
         </el-form-item>
         <el-form-item label="创建时间" prop="add_time">
-          <el-input v-model="editForm.add_time"></el-input>
+          <el-input v-model="editForm.add_time">
+            <!-- <template slot-scope="scope">{{scope.row.editForm.add_time|dateFormat}}</template> -->
+          </el-input>
         </el-form-item>
       </el-form>
       <span slot="footer" class="dialog-footer">
